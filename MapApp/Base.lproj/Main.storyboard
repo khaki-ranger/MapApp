@@ -30,6 +30,12 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8NI-qC-ZgU">
                                 <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q97-YY-xnk">
+                                <rect key="frame" x="337" y="637" width="22" height="22"/>
+                                <connections>
+                                    <action selector="changeMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhh-bt-d6U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -37,9 +43,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8NI-qC-ZgU" secondAttribute="trailing" id="CrA-K6-Hpy"/>
                             <constraint firstItem="8NI-qC-ZgU" firstAttribute="top" secondItem="vBf-PX-Tf0" secondAttribute="bottom" id="QbH-uQ-p3r"/>
                             <constraint firstItem="vBf-PX-Tf0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YsR-N9-h22"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q97-YY-xnk" secondAttribute="bottom" constant="8" id="iEc-aZ-4kT"/>
                             <constraint firstItem="vBf-PX-Tf0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kVV-Yo-MKc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vBf-PX-Tf0" secondAttribute="trailing" id="kla-5a-tFD"/>
                             <constraint firstItem="8NI-qC-ZgU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uYz-1l-igW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q97-YY-xnk" secondAttribute="trailing" constant="16" id="vUL-Wo-ijb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
